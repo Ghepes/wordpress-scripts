@@ -10,5 +10,8 @@
         "psr-4": {
             "Namespace\\WordPressScripts\\": "assets/"
         }
+    },
+    "scripts": {
+        "test": "echo 'No tests defined.'"
     }
 }

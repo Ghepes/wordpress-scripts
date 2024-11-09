@@ -136,6 +136,28 @@ composer install
 
 ````
 
+### Oder with phpunit
+````
+{
+    "name": "ghepes/wordpress-scripts",
+    "description": "Private package for CSS and JS scripts used in WordPress.",
+    "type": "library",
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Namespace\\WordPressScripts\\": "assets/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
+
+````
+
 ### i. If you want to change to a private pack, you must add:
 ````
 "repositories": [
@@ -180,3 +202,8 @@ wordpress-scripts/
 │   ├── custom.js
 │   ├── style.css
 └── README.md            # Documentation (opțional)
+
+
+
+
+
