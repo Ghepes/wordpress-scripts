@@ -1,17 +1,26 @@
 {
     "name": "ghepes/wordpress-scripts",
-    "description": "Private package for CSS and JS scripts used in WordPress.",
+    "description": "A package for WordPress scripts and styles",
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ghepes",
+            "email": "info.wromo@gmail.com"
+        }
+    ],
     "require": {
         "php": ">=7.4"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
         "psr-4": {
-            "Namespace\\WordPressScripts\\": "assets/"
+            "Ghepes\\WordPressScripts\\": "src/"
         }
     },
     "scripts": {
-        "test": "echo 'No tests defined.'"
+        "test": "vendor/bin/phpunit"
     }
 }
